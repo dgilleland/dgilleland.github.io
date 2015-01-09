@@ -71,3 +71,6 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - README.md
+
+prose:
+  media: 'images'
