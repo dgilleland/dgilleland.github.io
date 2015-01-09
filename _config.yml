@@ -71,4 +71,3 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - README.md
-	- AdHoc.dgilleland.github.io.sln
