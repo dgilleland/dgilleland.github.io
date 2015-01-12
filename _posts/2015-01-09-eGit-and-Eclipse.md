@@ -14,7 +14,9 @@ This blog post is all about how I do that through EGit and Eclipse.
 
 Installing EGit is a one-time thing that you do on each computer you use. I typically do it on anywhere from two to four computers, because my classes are in different labs, so I get a bit of practice doing this.
 
-- 3 Select the **Install New Software** option from the **Help** menu. <details> ![menuHelpInstallNewSoftware.png](/images/posts/eGit-and-Eclipse/menuHelpInstallNewSoftware.png) </details>
+- 4 Select the **Install New Software** option from the **Help** menu. <details>
+![menuHelpInstallNewSoftware.png](/images/posts/eGit-and-Eclipse/menuHelpInstallNewSoftware.png)
+</details>
 - In the **Install** dialog, select *-All Available Sites-* and search for *git*. Give it time to search, and you will see the **Collaboration** item in the results. Expand that and select the checkbox for **EGit**. Then click the *Next* button. <details>![installEGit.png](/images/posts/eGit-and-Eclipse/installEGit.png)</details>
 - Click *Next* after reviewing what's going to be installed. Give it some time, and your copy of EGit will be installed on your Eclipse instance. <details><summary>*[click for screenshot]*</summary>![installEGit-2.png](/images/posts/eGit-and-Eclipse/installEGit-2.png)</details>
 
