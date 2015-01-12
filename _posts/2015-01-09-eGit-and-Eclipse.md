@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using EGit with Eclipse"
+title: Using EGit with Eclipse
 published: true
 ---
 
@@ -12,7 +12,7 @@ This blog post is all about how I do that through EGit and Eclipse.
 
 ## Installing EGit
 
-Installing EGit is a one-time thing that you do on each computer you use. I typically do it on anywhere from two to four computers, because my classes are in different labs, so I get a bit of practice doing this.
+Installing EGit is a one-time thing that you do on each computer you use. I typically do it on anywhere from two to four computers each term, because my classes are in different labs, so I get a bit of practice doing this.
 
 1. Select the **Install New Software** option from the **Help** menu. ![menuHelpInstallNewSoftware.png](/images/posts/eGit-and-Eclipse/menuHelpInstallNewSoftware.png)
 2. In the **Install** dialog, select *-All Available Sites-* and search for *git*. Give it time to search, and you will see the **Collaboration** item in the results. Expand that and select the checkbox for **EGit**. Then click the *Next* button. ![installEGit.png](/images/posts/eGit-and-Eclipse/installEGit.png)
@@ -23,54 +23,7 @@ Installing EGit is a one-time thing that you do on each computer you use. I typi
 - steps to set up a repo for your GitHub account
 - the .gitignore to use (Eclipse, but allow .project and .classpath)
 
-{% highlight bash %}
-#################
-## Eclipse
-#################
-
-*.pydevproject
-# .project
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-# .classpath
-.settings/
-.loadpath
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
-
-#############
-## Windows detritus
-#############
-
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Mac crap
-.DS_Store
-{% endhighlight %}
+{% gist 511c341f41b183e1293b %}
 
 - Multiple projects in your repository
 Since I have my Android demos all in a single workspace, I also put them into a single repository.
@@ -83,4 +36,3 @@ Since I have my Android demos all in a single workspace, I also put them into a 
 
 - After the installation, you should see 
 ![gitRepoBlank.png](/images/posts/eGit-and-Eclipse/gitRepoBlank.png)
-
