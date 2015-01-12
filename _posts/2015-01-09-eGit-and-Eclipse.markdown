@@ -23,55 +23,54 @@ Installing EGit is a one-time thing that you do on each computer you use. I typi
 - steps to set up a repo for your GitHub account
 - the .gitignore to use (Eclipse, but allow .project and .classpath)
 
-    ```
-    #################
-    ## Eclipse
-    #################
-    
-    *.pydevproject
-    # .project
-    .metadata
-    bin/
-    tmp/
-    *.tmp
-    *.bak
-    *.swp
-    *~.nib
-    local.properties
-    # .classpath
-    .settings/
-    .loadpath
-    
-    # External tool builders
-    .externalToolBuilders/
-    
-    # Locally stored "Eclipse launch configurations"
-    *.launch
-    
-    # CDT-specific
-    .cproject
-    
-    # PDT-specific
-    .buildpath
-    
-    #############
-    ## Windows detritus
-    #############
-    
-    # Windows image file caches
-    Thumbs.db
-    ehthumbs.db
-    
-    # Folder config file
-    Desktop.ini
-    
-    # Recycle Bin used on file shares
-    $RECYCLE.BIN/
-    
-    # Mac crap
-    .DS_Store
-    ```
+{% highlight %}
+#################
+## Eclipse
+#################
 
+*.pydevproject
+# .project
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+# .classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+#############
+## Windows detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+{% endhighlight %}
 
 - Multiple projects in your repository
 Since I have my Android demos all in a single workspace, I also put them into a single repository.
