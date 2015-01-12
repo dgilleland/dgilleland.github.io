@@ -14,16 +14,15 @@ This blog post is all about how I do that through EGit and Eclipse.
 
 Installing EGit is a one-time thing that you do on each computer you use. I typically do it on anywhere from two to four computers, because my classes are in different labs, so I get a bit of practice doing this.
 
-- 5 Select the **Install New Software** option from the **Help** menu. ![menuHelpInstallNewSoftware.png](/images/posts/eGit-and-Eclipse/menuHelpInstallNewSoftware.png)
-- In the **Install** dialog, select *-All Available Sites-* and search for *git*. Give it time to search, and you will see the **Collaboration** item in the results. Expand that and select the checkbox for **EGit**. Then click the *Next* button. <details>![installEGit.png](/images/posts/eGit-and-Eclipse/installEGit.png)</details>
-- Click *Next* after reviewing what's going to be installed. Give it some time, and your copy of EGit will be installed on your Eclipse instance. <details><summary>*[click for screenshot]*</summary>![installEGit-2.png](/images/posts/eGit-and-Eclipse/installEGit-2.png)</details>
+1. Select the **Install New Software** option from the **Help** menu. ![menuHelpInstallNewSoftware.png](/images/posts/eGit-and-Eclipse/menuHelpInstallNewSoftware.png)
+2. In the **Install** dialog, select *-All Available Sites-* and search for *git*. Give it time to search, and you will see the **Collaboration** item in the results. Expand that and select the checkbox for **EGit**. Then click the *Next* button. ![installEGit.png](/images/posts/eGit-and-Eclipse/installEGit.png)
+3. Click *Next* after reviewing what's going to be installed. Give it some time, and your copy of EGit will be installed on your Eclipse instance. ![installEGit-2.png](/images/posts/eGit-and-Eclipse/installEGit-2.png)
 
 ## Setting Up Your Repository
 
 - steps to set up a repo for your GitHub account
 - the .gitignore to use (Eclipse, but allow .project and .classpath)
 
-<details><summary>*[click for code sample]*</summary>
   ```
   #################
   ## Eclipse
@@ -72,7 +71,7 @@ Installing EGit is a one-time thing that you do on each computer you use. I typi
   # Mac crap
   .DS_Store
   ```
-</details>
+
 
 - Multiple projects in your repository
 Since I have my Android demos all in a single workspace, I also put them into a single repository.
@@ -81,5 +80,8 @@ Since I have my Android demos all in a single workspace, I also put them into a 
 
 ## Cloning a repository
 
+----
+
 - After the installation, you should see 
-<details><summary>*[click for screenshot]*</summary>![gitRepoBlank.png](/images/posts/eGit-and-Eclipse/gitRepoBlank.png)</details>
+![gitRepoBlank.png](/images/posts/eGit-and-Eclipse/gitRepoBlank.png)
+
