@@ -23,7 +23,7 @@ Installing EGit is a one-time thing that you do on each computer you use. I typi
 - steps to set up a repo for your GitHub account
 - the .gitignore to use (Eclipse, but allow .project and .classpath)
 
-{% highlight %}
+{% highlight bash %}
 #################
 ## Eclipse
 #################
