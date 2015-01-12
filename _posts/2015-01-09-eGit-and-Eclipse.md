@@ -1,4 +1,6 @@
 ---
+layout: post
+title: "Using EGit with Eclipse"
 published: true
 ---
 
