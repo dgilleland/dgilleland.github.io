@@ -16,7 +16,68 @@ Installing EGit is a one-time thing that you do on each computer you use. I typi
 - In the **Install** dialog, select *-All Available Sites-* and search for *git*. Give it time to search, and you will see the **Collaboration** item in the results. Expand that and select the checkbox for **EGit**. Then click the *Next* button. <details><summary>*[click for screenshot]*</summary>![installEGit.png](/images/posts/eGit-and-Eclipse/installEGit.png)</details>
 - Click *Next* after reviewing what's going to be installed. Give it some time, and your copy of EGit will be installed on your Eclipse instance. <details><summary>*[click for screenshot]*</summary>![installEGit-2.png](/images/posts/eGit-and-Eclipse/installEGit-2.png)</details>
 
+## Setting Up Your Repository
 
+- steps to set up a repo for your GitHub account
+- the .gitignore to use (Eclipse, but allow .project and .classpath)
+
+<details><summary>*[click for code sample]*</summary>
+  ```
+  #################
+  ## Eclipse
+  #################
+  
+  *.pydevproject
+  # .project
+  .metadata
+  bin/
+  tmp/
+  *.tmp
+  *.bak
+  *.swp
+  *~.nib
+  local.properties
+  # .classpath
+  .settings/
+  .loadpath
+  
+  # External tool builders
+  .externalToolBuilders/
+  
+  # Locally stored "Eclipse launch configurations"
+  *.launch
+  
+  # CDT-specific
+  .cproject
+  
+  # PDT-specific
+  .buildpath
+  
+  #############
+  ## Windows detritus
+  #############
+  
+  # Windows image file caches
+  Thumbs.db
+  ehthumbs.db
+  
+  # Folder config file
+  Desktop.ini
+  
+  # Recycle Bin used on file shares
+  $RECYCLE.BIN/
+  
+  # Mac crap
+  .DS_Store
+  ```
+</details>
+
+- Multiple projects in your repository
+Since I have my Android demos all in a single workspace, I also put them into a single repository.
+
+## Saving to a repository
+
+## Cloning a repository
 
 - After the installation, you should see 
 <details><summary>*[click for screenshot]*</summary>![gitRepoBlank.png](/images/posts/eGit-and-Eclipse/gitRepoBlank.png)</details>
