@@ -12,3 +12,4 @@ features:
   details: Lately, my teaching focus is on the Microsoft stack of technologies, with a web-based front-end. I also like to dabble in the new web stuff like Vue.
 footer: CC BY 4.0 | Copyright © 2000-present Dan Gilleland
 ---
+# Welcome to My Instructor Blog
