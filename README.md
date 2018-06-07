@@ -5,7 +5,7 @@ actionText: Read →
 actionLink: /new/
 features:
 - title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+  details: This static site is built with VuePress, allowing me to use Vue components in markdown and develop custom themes with Vue.
 - title: Disclaimer
   details: The views on this website do not necessarily reflect the views of my employer, colleagues, students, or anyone else (including me, 'cause I am free to change my mind). Additionally, any connection between the content on this site and courses I teach are coincidental, and do not reflect official course material or content.
 - title: What I'm Up To
