@@ -1,0 +1,15 @@
+{
+  "name": "dgilleland.github.io",
+  "version": "1.0.0",
+  "description": "Instructor Blog for Dan Gilleland (Digital Media and IT, NAIT)",
+  "main": "index.html",
+  "repository": "https://github.com/dgilleland/dgilleland.github.io.git",
+  "author": "dgilleland@users.noreply.github.com",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "vuepress build"
+  },
+  "devDependencies": {
+    "vuepress": "^0.10.0"
+  }
+}
