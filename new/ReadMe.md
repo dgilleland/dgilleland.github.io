@@ -20,7 +20,7 @@ title: Schedule
 
 ## Sept 4 - Dec 8, 2018
 
-<td-color yellow="1508 A01" green="2018 A01" blue="2018 A03">
+<td-color yellow="1508 A01" green="2018 A01" blue="2018 A02">
 |       | Mon | Tue | Wed | Thu | Fri |
 |:------|-----|-----|-----|-----|-----|
 | 8 ^AM^  |  |  | DMIT 1508 **A01** WB320 |  | DMIT 1508 **A01** WB320 |
