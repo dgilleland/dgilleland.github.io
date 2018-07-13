@@ -1,6 +1,5 @@
 <template>
     <div>
-        <span v-if="yellow">{{yellow}}</span>
         <slot />
     </div>
 </template>
