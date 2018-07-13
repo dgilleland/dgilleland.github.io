@@ -20,6 +20,7 @@ title: Schedule
 
 ## Sept 4 - Dec 8, 2018
 
+<td-color>
 |       | Mon | Tue | Wed | Thu | Fri |
 |:------|-----|-----|-----|-----|-----|
 | 8 ^AM^  |  |  | DMIT 1508 **A01** WB320 |  | DMIT 1508 **A01** WB320 |
@@ -32,6 +33,7 @@ title: Schedule
 | 3       | DMIT 2018 **A02** WA302 | DMIT 2018 **A01** WA302 |  |  |  |
 | 4       | DMIT 2018 **A02** WA302 | DMIT 2018 **A01** WA302 |  |  |  |
 | 5       |  |  |  |  |  |
+</td-color>
 
 ----
 
