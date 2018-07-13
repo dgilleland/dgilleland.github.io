@@ -10,7 +10,7 @@ export default {
     props: ['yellow', 'blue', 'green', 'red'],
     mounted() {
         var cells = document.querySelectorAll('td');
-        cells.array.forEach(element => {
+        cells.forEach(function(element) {
             console.log(element.innerText);
         });
     }
