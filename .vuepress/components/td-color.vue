@@ -11,7 +11,7 @@ export default {
     mounted() {
         var cells = document.querySelectorAll('td');
         cells.forEach(function(element) {
-            if(yellow && element.innerText.includes(yellow))
+            if(this.yellow && element.innerText.includes(this.yellow))
               element.classList.add('yellow');
             // console.log(element.innerText);
         });
