@@ -7,7 +7,13 @@
 
 <script>
 export default {
-    props: ['yellow', 'blue', 'green', 'red']
+    props: ['yellow', 'blue', 'green', 'red'],
+    mounted() {
+        var cells = document.querySelectorAll('td');
+        cells.array.forEach(element => {
+            console.log(element.innerText);
+        });
+    }
 }
 </script>
 
