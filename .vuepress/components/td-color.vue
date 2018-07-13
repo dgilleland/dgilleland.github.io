@@ -1,13 +1,13 @@
 <template>
     <div>
-        <h6>colored</h6>
+        <span v-if="yellow">{{yellow}}</span>
         <slot />
     </div>
 </template>
 
 <script>
 export default {
-
+    props: ['yellow', 'blue', 'green', 'red']
 }
 </script>
 
