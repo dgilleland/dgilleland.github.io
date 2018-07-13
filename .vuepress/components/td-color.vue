@@ -10,9 +10,19 @@ export default {
     props: ['yellow', 'blue', 'green', 'red'],
     mounted() {
         var cells = document.querySelectorAll('td');
+        var y = this.yellow;
+        var b = this.blue;
+        var g = this.green;
+        var r = this.red;
         cells.forEach(function(element) {
-            if(this.yellow && element.innerText.includes(this.yellow))
+            if(y && element.innerText.includes(y))
               element.classList.add('yellow');
+            else if(b && element.innerText.includes(b))
+              element.classList.add('blue');
+            else if(g && element.innerText.includes(g))
+              element.classList.add('green');
+            else if(r && element.innerText.includes(r))
+              element.classList.add('red');
             // console.log(element.innerText);
         });
     }
