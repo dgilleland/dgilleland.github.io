@@ -1,8 +1,6 @@
 module.exports = {
     title: 'Daniel Gilleland',
     description: 'Instructor Blog',
-    // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'dgilleland/dgilleland.github.io',
     markdown: {
         config: md => {
             md.set({ breaks: true })
@@ -19,6 +17,8 @@ module.exports = {
         }
     },
     themeConfig: {
+        // Assumes GitHub. Can also be a full GitLab url.
+        repo: 'dgilleland/dgilleland.github.io',
         lastUpdated: 'Last Updated',
         serviceWorker: {
             updatePopup: true // Boolean | Object, default to undefined.
