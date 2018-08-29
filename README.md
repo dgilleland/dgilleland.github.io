@@ -13,3 +13,5 @@ features:
 footer: CC BY 4.0 | Copyright © 2000-present Dan Gilleland
 ---
 # Welcome to My Instructor Blog
+
+[![Build Status](https://travis-ci.org/dgilleland/dgilleland.github.io.svg?branch=publish)](https://travis-ci.org/dgilleland/dgilleland.github.io)
