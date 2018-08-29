@@ -14,6 +14,14 @@ module.exports = {
             // md.use(require('markdown-it-footnote'))
             md.use(require('markdown-it-sub'))
             md.use(require('markdown-it-sup'))
-              }
+        }
+    },
+    themeConfig: {
+        nav: [
+            { text: 'Home', link: '/' },
+            { text: 'Teaching Schedule', link: '/new/' },
+            { text: 'DMIT-1508', link: 'https://DMIT-1508.github.io' },
+            { text: 'DMIT-2018', link: 'https://DMIT-2018.github.io' },
+        ]
     }
-  }
+}
