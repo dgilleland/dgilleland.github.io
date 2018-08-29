@@ -27,7 +27,6 @@ module.exports = {
             //    message: "New content is available.", 
             //    buttonText: "Refresh" 
             // }
-          }
         },
         nav: [
             { text: 'Home', link: '/' },
@@ -36,4 +35,4 @@ module.exports = {
             { text: 'DMIT-2018', link: 'https://DMIT-2018.github.io' },
         ]
     }
-}
+};
