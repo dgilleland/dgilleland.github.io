@@ -28,11 +28,17 @@ module.exports = {
             //    buttonText: "Refresh" 
             // }
         },
+        displayAllHeaders: true, // Default: false
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Teaching Schedule', link: '/new/' },
             { text: 'DMIT-1508', link: 'https://DMIT-1508.github.io' },
             { text: 'DMIT-2018', link: 'https://DMIT-2018.github.io' },
+        ],
+        sidebar: [
+            '/new/',
+            '/new/tools',
+            '/about/colophon'
         ]
     }
 };
