@@ -5,7 +5,7 @@ module.exports = {
         config: md => {
             md.set({ breaks: true })
             // md.use(require('markdown-it-imsize'))
-            // md.use(require('markdown-it-mermaid').default) // leave default options
+            md.use(require('markdown-it-mermaid').default) // leave default options
             md.use(require('markdown-it-checkbox'))
             // md.use(require('markdown-it-kbd'))
             // md.use(require('markdown-it-deflist'))
