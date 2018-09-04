@@ -39,7 +39,8 @@ module.exports = {
         sidebar: [
             '/new/',
             '/new/tools',
-            '/about/colophon'
+            '/about/colophon',
+            '/about/xkcd'
         ]
     }
 };
