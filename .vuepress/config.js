@@ -40,7 +40,8 @@ module.exports = {
             '/new/',
             '/new/tools',
             '/about/colophon',
-            '/about/xkcd'
+            '/about/xkcd',
+            '/about/funny'
         ]
     }
 };
