@@ -20,7 +20,7 @@ title: Schedule
 
 ## Jan 7 - Apr 27, 2019
 
-<td-color yellow="1508 A01" green="2018 A01" blue="2018 A02">
+<td-color yellow="1508 A01" green="2018 A01" blue="1517 A03">
 |         | Mon | Tue | Wed | Thu | Fri |
 |:--------|-----|-----|-----|-----|-----|
 | 8 ^AM^  |     | CPSC 1517 **A03** WB304 |     | CPSC 1517 **A03** WB320 |     |
