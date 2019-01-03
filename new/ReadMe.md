@@ -20,6 +20,22 @@ title: Schedule
 
 ## Jan 7 - Apr 27, 2019
 
+<td-color yellow="1508 A02" green="2018 A01" blue="1517 A03">
+|         | Mon | Tue | Wed | Thu | Fri |
+|:--------|-----|-----|-----|-----|-----|
+| 8 ^AM^  | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB304 | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB320 |     |
+| 9       | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB304 | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB320 |     |
+| 10      |     |     |     |     | CPSC 1517 **A03** WA322 |
+| 11      |     |     |     |     | CPSC 1517 **A03** WA322 |
+| 12 ^PM^ | DMIT 2018 **A01** WC120 |     |     |     |     |
+| 1       | DMIT 2018 **A01** WC120 |     |     | DMIT 1508 **A02** WA302 | DMIT 2018 **A01** WC120 |
+| 2       |     | DMIT 2018 **A01** WB308 |     | DMIT 1508 **A02** WA302 | DMIT 2018 **A01** WC120 |
+| 3       |     | DMIT 2018 **A01** WB308 |     |     |     |
+| 4       |     |     |     |     |     |
+| 5       |     |     |     |     |     |
+</td-color>
+
+<!--
 <td-color yellow="1508 A01" green="2018 A01" blue="1517 A03">
 |         | Mon | Tue | Wed | Thu | Fri |
 |:--------|-----|-----|-----|-----|-----|
@@ -34,7 +50,7 @@ title: Schedule
 | 4       |     |     |     |     |     |
 | 5       |     |     |     |     |     |
 </td-color>
-
+-->
 <!--
 ## Sept 4 - Dec 8, 2018
 
