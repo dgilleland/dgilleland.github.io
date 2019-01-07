@@ -22,6 +22,10 @@ export default {
               element.classList.add('green');
             else if(r && element.innerText.includes(r))
               element.classList.add('red');
+            else if(element.innerText.includes('by appointment'))
+              element.classList.add('by-appointment');
+            else if(element.innerText.includes('unavailable'))
+              element.classList.add('unavailable');
             // console.log(element.innerText);
         });
     }
@@ -29,6 +33,16 @@ export default {
 </script>
 
 <style>
+td.unavailable {
+    font-style: italic;
+    font-size: small;
+}
+td.by-appointment {
+    background-color: gainsboro;
+    font-size: small;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
 td.yellow {
     background-color:rgba(255, 251, 0, 0.185);
 }
