@@ -23,16 +23,16 @@ title: Schedule
 <td-color yellow="1508 A02" green="2018 A01" blue="1517 A03">
 |         | Mon | Tue | Wed | Thu | Fri |
 |:--------|-----|-----|-----|-----|-----|
-| 8 ^AM^  | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB304 | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB320 |     |
-| 9       | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB304 | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB320 |     |
-| 10      |     |     |     |     | CPSC 1517 **A03** WA322 |
-| 11      |     |     |     |     | CPSC 1517 **A03** WA322 |
-| 12 ^PM^ | DMIT 2018 **A01** WC120 |     |     |     |     |
-| 1       | DMIT 2018 **A01** WC120 |     |     | DMIT 1508 **A02** WA302 | DMIT 2018 **A01** WC120 |
-| 2       |     | DMIT 2018 **A01** WB308 |     | DMIT 1508 **A02** WA302 | DMIT 2018 **A01** WC120 |
-| 3       |     | DMIT 2018 **A01** WB308 |     |     |     |
-| 4       |     |     |     |     |     |
-| 5       |     |     |     |     |     |
+| 7 ^AM^  | unavailable | unavailable | unavailable | unavailable | unavailable |
+| 8       | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB304 | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB320 | unavailable |
+| 9       | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB304 | DMIT 1508 **A02** WA302 | CPSC 1517 **A03** WB320 | by appointment |
+| 10      | by appointment | by appointment | by appointment | by appointment | CPSC 1517 **A03** WA322 |
+| 11      | by appointment | by appointment | by appointment | by appointment | CPSC 1517 **A03** WA322 |
+| 12 ^PM^ | DMIT 2018 **A01** WC120 | by appointment | by appointment | by appointment | by appointment |
+| 1       | DMIT 2018 **A01** WC120 | by appointment | by appointment | DMIT 1508 **A02** WA302 | DMIT 2018 **A01** WC120 |
+| 2       | by appointment | DMIT 2018 **A01** WB308 | by appointment | DMIT 1508 **A02** WA302 | DMIT 2018 **A01** WC120 |
+| 3       | unavailable | DMIT 2018 **A01** WB308 | unavailable | unavailable | unavailable |
+| 4       | unavailable | unavailable | unavailable | unavailable | unavailable |
 </td-color>
 
 <!--
