@@ -33,6 +33,7 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'Teaching Schedule', link: '/new/' },
             { text: 'DMIT-1508', link: 'https://DMIT-1508.github.io' },
+            { text: 'CPSC-1517', link: 'https://CPSC-1517.github.io' },
             { text: 'DMIT-2018', link: 'https://DMIT-2018.github.io' },
             { text: 'Sep 2018 Errata', link: 'https://dgilleland.github.io/2018-Sep-In-Class/'}
         ],
