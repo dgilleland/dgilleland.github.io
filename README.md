@@ -13,3 +13,5 @@ features:
 footer: CC BY 4.0 | Copyright © 2000-present Dan Gilleland
 ---
 [![Build Status](https://travis-ci.org/dgilleland/dgilleland.github.io.svg?branch=publish)](https://travis-ci.org/dgilleland/dgilleland.github.io)
+
+[![Tags](https://imgs.xkcd.com/comics/tags.png)](https://xkcd.com/1144/)
