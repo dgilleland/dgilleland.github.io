@@ -18,6 +18,25 @@ title: Schedule
 | 5       |  |  |  |  |  |
  -->
 
+## Sep 3 - Dec 13, 2019
+
+<td-color yellow="1508 A01" green="2018 A01" blue="2018 A02">
+|         | Mon | Tue | Wed | Thu | Fri |
+|:--------|-----|-----|-----|-----|-----|
+| 7 ^AM^  | unavailable | unavailable | unavailable | unavailable | unavailable |
+| 8 ^AM^  | unavailable | unavailable | DMIT 1508 **A02** WB320 | unavailable | DMIT 1508 **A02** WB320 |
+| 9       | DMIT 1508 **A02** WB320 | by appointment | DMIT 1508 **A02** WB320 | by appointment | DMIT 1508 **A02** WB320 |
+| 10      | DMIT 1508 **A01** WB320 | DMIT 2018 **A02** WA320 | by appointment | DMIT 2018 **A01** WB320 | by appointment |
+| 11      | by appointment | DMIT 2018 **A02** WA320 | by appointment | DMIT 2018 **A01** WB320 | by appointment |
+| 12 ^PM^ | by appointment | by appointment | by appointment | by appointment | DMIT 2018 **A01** WC122 |
+| 1       | by appointment | by appointment | by appointment | DMIT 2018 **A02** WA320 | DMIT 2018 **A01** WC122 |
+| 2       | by appointment | by appointment | by appointment | DMIT 2018 **A02** WA320 | by appointment |
+| 3       | DMIT 2018 **A02** WA302 | DMIT 2018 **A01** WA302 | by appointment | unavailable | unavailable |
+| 4       | DMIT 2018 **A02** WA302 | DMIT 2018 **A01** WA302 | by appointment | unavailable | unavailable |
+| 5       | unavailable | unavailable | unavailable | unavailable | unavailable |
+</td-color>
+
+<!--
 ## Jan 7 - Apr 27, 2019
 
 <td-color yellow="1508 A02" green="2018 A01" blue="1517 A03">
@@ -34,7 +53,7 @@ title: Schedule
 | 3       | unavailable | DMIT 2018 **A01** WB308 | unavailable | unavailable | unavailable |
 | 4       | unavailable | unavailable | unavailable | unavailable | unavailable |
 </td-color>
-
+-->
 <!--
 <td-color yellow="1508 A01" green="2018 A01" blue="1517 A03">
 |         | Mon | Tue | Wed | Thu | Fri |
