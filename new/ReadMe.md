@@ -24,8 +24,8 @@ title: Schedule
 |         | Mon | Tue | Wed | Thu | Fri |
 |:--------|-----|-----|-----|-----|-----|
 | 7 ^AM^  | unavailable | unavailable | unavailable | unavailable | unavailable |
-| 8 ^AM^  | unavailable | unavailable | DMIT 1508 **A02** WB320 | unavailable | DMIT 1508 **A02** WB320 |
-| 9       | DMIT 1508 **A02** WB320 | by appointment | DMIT 1508 **A02** WB320 | by appointment | DMIT 1508 **A02** WB320 |
+| 8 ^AM^  | unavailable | unavailable | DMIT 1508 **A01** WB320 | unavailable | DMIT 1508 **A01** WB320 |
+| 9       | DMIT 1508 **A01** WB320 | by appointment | DMIT 1508 **A01** WB320 | by appointment | DMIT 1508 **A01** WB320 |
 | 10      | DMIT 1508 **A01** WB320 | DMIT 2018 **A02** WA320 | by appointment | DMIT 2018 **A01** WB320 | by appointment |
 | 11      | by appointment | DMIT 2018 **A02** WA320 | by appointment | DMIT 2018 **A01** WB320 | by appointment |
 | 12 ^PM^ | by appointment | by appointment | by appointment | by appointment | DMIT 2018 **A01** WC122 |
