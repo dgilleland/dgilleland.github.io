@@ -28,8 +28,8 @@ title: Schedule
 | 9       | DMIT 1508 **A01** WB320 | by appointment | DMIT 1508 **A01** WB320 | by appointment | DMIT 1508 **A01** WB320 |
 | 10      | DMIT 1508 **A01** WB320 | DMIT 2018 **A02** WA320 | by appointment | DMIT 2018 **A01** WB320 | by appointment |
 | 11      | by appointment | DMIT 2018 **A02** WA320 | by appointment | DMIT 2018 **A01** WB320 | by appointment |
-| 12 ^PM^ | by appointment | by appointment | by appointment | by appointment | DMIT 2018 **A01** WC122 |
-| 1       | by appointment | by appointment | by appointment | DMIT 2018 **A02** WA320 | DMIT 2018 **A01** WC122 |
+| 12 ^PM^ | by appointment | by appointment | by appointment | by appointment | DMIT 2018 **A01** WB312 |
+| 1       | by appointment | by appointment | by appointment | DMIT 2018 **A02** WA320 | DMIT 2018 **A01** WB312 |
 | 2       | by appointment | by appointment | by appointment | DMIT 2018 **A02** WA320 | by appointment |
 | 3       | DMIT 2018 **A02** WA302 | DMIT 2018 **A01** WA302 | by appointment | unavailable | unavailable |
 | 4       | DMIT 2018 **A02** WA302 | DMIT 2018 **A01** WA302 | by appointment | unavailable | unavailable |
