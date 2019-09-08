@@ -3,6 +3,8 @@ title: Schedule
 ---
 # Teaching Schedule
 
+> ***Ad:*** Get [**Isometric Contributions**](https://chrome.google.com/webstore/detail/isometric-contributions/mjoedlfflcchnleknnceiplgaeoegien) for your Chrome browser.
+
 <!-- 
 |         | Mon | Tue | Wed | Thu | Fri |
 |:--------|-----|-----|-----|-----|-----|
