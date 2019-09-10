@@ -41,6 +41,7 @@ module.exports = {
         sidebar: [
             '/new/',
             '/new/tools',
+            '/new/csharp-tips',
             '/about/colophon',
             '/about/xkcd',
             '/about/funny'
