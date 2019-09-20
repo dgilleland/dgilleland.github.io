@@ -111,6 +111,8 @@ title: Schedule
 
 ----
 
-## TODO:
+## Free Money
 
-- [ ] Move older posts to my github blog
+> Made you look! Seriously though, watch the following video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wX78iKhInsc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
