@@ -27,13 +27,13 @@ title: Schedule
 |:--------|-----|-----|-----|-----|-----|
 | 8 ^AM^  |  |  |  |  |  |
 | 9       | by appointment | by appointment | by appointment | by appointment | by appointment |
-| 10      | DMIT 1508 **A05** WA314 | DMIT 1508 **A05** WA314 | by appointment | by appointment | by appointment |
-| 11      | DMIT 1508 **A05** WA314 | DMIT 1508 **A05** WA314 | by appointment | by appointment | by appointment |
+| 10      | DMIT 1508 **A05** WA314 | DMIT 1508 **A05** WC324 | by appointment | by appointment | by appointment |
+| 11      | DMIT 1508 **A05** WA314 | DMIT 1508 **A05** WC324 | by appointment | by appointment | by appointment |
 | 12 ^PM^ | DMIT 2018 **A01** WC120 | by appointment | by appointment | DMIT 1508 **A05** WB304 | DMIT 1508 **A04** WA320 |
 | 1       | DMIT 2018 **A01** WC120 | DMIT 2018 **A01** WB308 | by appointment | DMIT 1508 **A05** WB304 | DMIT 1508 **A04** WA320 |
 | 2       | by appointment | DMIT 2018 **A01** WB308 | by appointment | by appointment | by appointment |
-| 3       | by appointment | DMIT 1508 **A04** WC120 | DMIT 1508 **A04** WA314 | DMIT 2018 **A01** WA314 | by appointment |
-| 4       | unavailable | DMIT 1508 **A04** WC120 | DMIT 1508 **A04** WA314 | DMIT 2018 **A01** WA314 | unavailable |
+| 3       | by appointment | DMIT 1508 **A04** WC120 | DMIT 1508 **A04** WA312 | DMIT 2018 **A01** WA314 | by appointment |
+| 4       | unavailable | DMIT 1508 **A04** WC120 | DMIT 1508 **A04** WA312 | DMIT 2018 **A01** WA314 | unavailable |
 | 5       |  |  |  |  |  |
 </td-color>
 
