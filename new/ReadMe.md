@@ -29,11 +29,11 @@ title: Schedule
 | 9       |  |  |  |  |  |
 | 10      | DMIT 1508 **A05** WA314 | DMIT 1508 **A05** WA314 |  |  |  |
 | 11      | DMIT 1508 **A05** WA314 | DMIT 1508 **A05** WA314 |  |  |  |
-| 12 ^PM^ | DMIT 2018 **A01** WC120 |  |  | DMIT 1508 **A04** WB304 | DMIT 1508 **A04** WA320 |
-| 1       | DMIT 2018 **A01** WC120 | DMIT 2018 **A01** WB308 |  | DMIT 1508 **A04** WB304 | DMIT 1508 **A04** WA320 |
+| 12 ^PM^ | DMIT 2018 **A01** WC120 |  |  | DMIT 1508 **A05** WB304 | DMIT 1508 **A04** WA320 |
+| 1       | DMIT 2018 **A01** WC120 | DMIT 2018 **A01** WB308 |  | DMIT 1508 **A05** WB304 | DMIT 1508 **A04** WA320 |
 | 2       |  | DMIT 2018 **A01** WB308 |  |  |  |
-| 3       |  | DMIT 1508 **A04** WC120 | DMIT 1508 **A05** WA314 | DMIT 2018 **A01** WA314 |  |
-| 4       |  | DMIT 1508 **A04** WC120 | DMIT 1508 **A05** WA314 | DMIT 2018 **A01** WA314 |  |
+| 3       |  | DMIT 1508 **A04** WC120 | DMIT 1508 **A04** WA314 | DMIT 2018 **A01** WA314 |  |
+| 4       |  | DMIT 1508 **A04** WC120 | DMIT 1508 **A04** WA314 | DMIT 2018 **A01** WA314 |  |
 | 5       |  |  |  |  |  |
 </td-color>
 
