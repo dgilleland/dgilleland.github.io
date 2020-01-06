@@ -1,33 +1,31 @@
 module.exports = {
     title: 'Daniel Gilleland',
     description: 'Instructor Blog',
-    markdown: {
-        config: md => {
-            md.set({ breaks: true })
-            // md.use(require('markdown-it-imsize'))
-            md.use(require('markdown-it-mermaid').default) // leave default options
-            md.use(require('markdown-it-checkbox'))
-            // md.use(require('markdown-it-kbd'))
-            // md.use(require('markdown-it-deflist'))
-            // md.use(require('markdown-it-abbr'))
-            // md.use(require('markdown-it-mark'))
-            // md.use(require('markdown-it-footnote'))
-            md.use(require('markdown-it-sub'))
-            md.use(require('markdown-it-sup'))
-        }
+    extendMarkdown(md) {
+        md.set({ breaks: true })
+        // md.use(require('markdown-it-imsize'))
+        md.use(require('markdown-it-mermaid').default) // leave default options
+        md.use(require('markdown-it-checkbox'))
+        // md.use(require('markdown-it-kbd'))
+        // md.use(require('markdown-it-deflist'))
+        // md.use(require('markdown-it-abbr'))
+        // md.use(require('markdown-it-mark'))
+        // md.use(require('markdown-it-footnote'))
+        md.use(require('markdown-it-sub'))
+        md.use(require('markdown-it-sup'))
     },
     themeConfig: {
         // Assumes GitHub. Can also be a full GitLab url.
         repo: 'dgilleland/dgilleland.github.io',
         lastUpdated: 'Last Updated',
-        serviceWorker: {
-            updatePopup: true // Boolean | Object, default to undefined.
-            // If set to true, the default text config will be: 
-            // updatePopup: { 
-            //    message: "New content is available.", 
-            //    buttonText: "Refresh" 
-            // }
-        },
+        // serviceWorker: {
+        //     updatePopup: true // Boolean | Object, default to undefined.
+        //     // If set to true, the default text config will be: 
+        //     // updatePopup: { 
+        //     //    message: "New content is available.", 
+        //     //    buttonText: "Refresh" 
+        //     // }
+        // },
         displayAllHeaders: true, // Default: false
         nav: [
             { text: 'Home', link: '/' },
@@ -46,5 +44,14 @@ module.exports = {
             '/about/xkcd',
             '/about/funny'
         ]
+    },
+    plugins: {
+        '@vuepress/pwa': {
+           serviceWorker: true,
+           updatePopup: {
+                message: "New content is available.",
+                buttonText: "Refresh"
+           }
+        }
     }
 };
