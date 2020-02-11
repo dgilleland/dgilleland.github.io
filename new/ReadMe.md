@@ -22,6 +22,8 @@ title: Schedule
 
 ## Jan 6 - Apr 24, 2020
 
+> ***GitHub Training** is available during February, 2019*
+
 <td-color yellow="1508 A05" green="2018 A01" blue="1508 A04" red="GitHub">
 |         | Mon | Tue | Wed | Thu | Fri |
 |:--------|-----|-----|-----|-----|-----|
