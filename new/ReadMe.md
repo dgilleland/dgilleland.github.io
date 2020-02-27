@@ -22,14 +22,18 @@ title: Schedule
 
 ## Jan 6 - Apr 24, 2020
 
+<!-- 
 > ***GitHub Training** is available during February, 2019*
+
+| 7 ^AM^  | GitHub Training **WB304** |  |  | GitHub Training **WA302** |  |
+| 8       | GitHub Training **WB304** |  |  | GitHub Training **WA302** |  |
+| 9       | GitHub Training **WB304** | by appointment | by appointment | GitHub Training **WA302** | by appointment |
+ -->
 
 <td-color yellow="1508 A05" green="2018 A01" blue="1508 A04" red="GitHub">
 |         | Mon | Tue | Wed | Thu | Fri |
 |:--------|-----|-----|-----|-----|-----|
-| 7 ^AM^  | GitHub Training **WB304** |  |  | GitHub Training **WA302** |  |
-| 8       | GitHub Training **WB304** |  |  | GitHub Training **WA302** |  |
-| 9       | GitHub Training **WB304** | by appointment | by appointment | GitHub Training **WA302** | by appointment |
+| 9 ^AM^  | by appointment | by appointment | by appointment | by appointment | by appointment |
 | 10      | DMIT 1508 **A05** WA314 | DMIT 1508 **A05** WC324 | by appointment | by appointment | by appointment |
 | 11      | DMIT 1508 **A05** WA314 | DMIT 1508 **A05** WC324 | by appointment | by appointment | by appointment |
 | 12 ^PM^ | DMIT 2018 **A01** WC120 | by appointment | by appointment | DMIT 1508 **A05** WB304 | DMIT 1508 **A04** WA320 |
