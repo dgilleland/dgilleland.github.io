@@ -42,7 +42,8 @@ module.exports = {
             '/new/csharp-tips',
             '/about/colophon',
             '/about/xkcd',
-            '/about/funny'
+            '/about/funny',
+            '/new/experiments'
         ]
     },
     plugins: {
