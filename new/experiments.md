@@ -9,9 +9,9 @@ On this page, I'm trying different experiments with VuePress.
 
 Here is a KaTex code sample.
 
-$$
+```math
 \oint_C x^3\, dx + 4y^2\, dy
-$$
+```
 
 ## Research
 
