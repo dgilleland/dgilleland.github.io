@@ -13,3 +13,6 @@ $$
 \oint_C x^3\, dx + 4y^2\, dy
 $$
 
+## Research
+
+- [ ] Check out [mhchem](https://mhchem.github.io/MathJax-mhchem/)
