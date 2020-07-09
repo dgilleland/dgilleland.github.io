@@ -20,15 +20,31 @@ title: Schedule
 | 5       |  |  |  |  |  |
  -->
 
-## Jan 6 - Apr 24, 2020
+## Sep, 2020
+
+<td-color yellow="1508 A05" green="2018 A01" blue="1508 A01" red="GitHub">
+|         | Mon | Tue | Wed | Thu | Fri |
+|:--------|-----|-----|-----|-----|-----|
+| 8 ^AM^  | DMIT 1508 **A05** |  | DMIT 1508 **A05** |  | DMIT 1508 **A01** |
+| 9       | DMIT 1508 **A05** |  | DMIT 1508 **A05** |  | DMIT 1508 **A01** |
+| 10      | DMIT 1508 **A01** | DMIT 2018 **A01** | DMIT 1508 **A01** |  |  |
+| 11      | DMIT 1508 **A01** | DMIT 2018 **A01** | DMIT 1508 **A01** |  |  |
+| 12 ^PM^ |  |  |  |  |  |
+| 1       | DMIT 2018 **A01** | DMIT 1508 **A05** |  |  |  |
+| 2       | DMIT 2018 **A01** | DMIT 1508 **A05** |  |  |  |
+| 3       |  |  |  | DMIT 2018 **A01** |  |
+| 4       |  |  |  | DMIT 2018 **A01** |  |
+| 5       |  |  |  |  |  |
+</td>
 
 <!-- 
+## Jan 6 - Apr 24, 2020
+
 > ***GitHub Training** is available during February, 2019*
 
 | 7 ^AM^  | GitHub Training **WB304** |  |  | GitHub Training **WA302** |  |
 | 8       | GitHub Training **WB304** |  |  | GitHub Training **WA302** |  |
 | 9       | GitHub Training **WB304** | by appointment | by appointment | GitHub Training **WA302** | by appointment |
- -->
 
 <td-color yellow="1508 A05" green="2018 A01" blue="1508 A04" red="GitHub">
 |         | Mon | Tue | Wed | Thu | Fri |
@@ -43,6 +59,7 @@ title: Schedule
 | 4       | unavailable | DMIT 1508 **A04** WC120 | DMIT 1508 **A04** WA312 | DMIT 2018 **A01** WA314 | unavailable |
 | 5       |  |  |  |  |  |
 </td-color>
+ -->
 
 <!--
 
