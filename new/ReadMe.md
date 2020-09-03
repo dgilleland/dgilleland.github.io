@@ -25,15 +25,15 @@ title: Schedule
 <td-color yellow="1508 A05" green="2018 A01" blue="1508 A01" red="GitHub">
 |         | Mon | Tue | Wed | Thu | Fri |
 |:--------|-----|-----|-----|-----|-----|
-| 8 ^AM^  | DMIT 1508 **A05** |  | DMIT 1508 **A05** |  | DMIT 1508 **A01** |
-| 9       | DMIT 1508 **A05** |  | DMIT 1508 **A05** |  | DMIT 1508 **A01** |
-| 10      | DMIT 1508 **A01** | DMIT 2018 **A01** | DMIT 1508 **A01** |  |  |
-| 11      | DMIT 1508 **A01** | DMIT 2018 **A01** | DMIT 1508 **A01** |  |  |
+| 8 ^AM^  | DMIT 1508 **A05** |  | DMIT 1508 **A05** | by appointment | DMIT 1508 **A01** |
+| 9       | DMIT 1508 **A05** |  | DMIT 1508 **A05** | by appointment | DMIT 1508 **A01** |
+| 10      | DMIT 1508 **A01** | DMIT 2018 **A01** | DMIT 1508 **A01** | by appointment | by appointment |
+| 11      | DMIT 1508 **A01** | DMIT 2018 **A01** | DMIT 1508 **A01** | by appointment | by appointment |
 | 12 ^PM^ |  |  |  |  |  |
-| 1       | DMIT 2018 **A01** | DMIT 1508 **A05** |  |  |  |
-| 2       | DMIT 2018 **A01** | DMIT 1508 **A05** |  |  |  |
-| 3       |  |  |  | DMIT 2018 **A01** |  |
-| 4       |  |  |  | DMIT 2018 **A01** |  |
+| 1       | DMIT 2018 **A01** | DMIT 1508 **A05** |  | by appointment | by appointment |
+| 2       | DMIT 2018 **A01** | DMIT 1508 **A05** | *Staff Meeting* | by appointment | by appointment |
+| 3       |  |  | *Staff Meeting* | DMIT 2018 **A01** |  |
+| 4       |  |  | *Staff Meeting* | DMIT 2018 **A01** |  |
 | 5       |  |  |  |  |  |
 </td>
 
