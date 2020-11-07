@@ -1,3 +1,5 @@
+[Nn]o[Tt]rack/
+
 .vuepress/dist/
 
 # Created by https://www.gitignore.io/api/node,macos,windows
