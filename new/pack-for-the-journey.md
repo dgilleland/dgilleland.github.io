@@ -16,6 +16,9 @@ This article is about travelling down the road of automating the building and pu
 
 - [ ] Try the [Learning Lab](https://lab.github.com/githubtraining/github-actions:-publish-to-github-packages)
 - [ ] **Read** [Hosting NuGet Packages on GitHub](https://blog.hildenco.com/2020/07/hosting-nuget-packages-on-github.html)
+- [ ] **Read** [Publishing .Net Standard NuGet Package with GitHub Actions](https://mahmud.blog/2019/12/25/publishing-net-standard-nuget-package-with-github-actions/)
+  - See your [NuGet.Org API Keys](https://www.nuget.org/account/apikeys)
+- [ ] **Watch** [Releasing NuGet Packages with GitHub Actions](https://www.youtube.com/watch?v=rjZHvv5h1TE)
 
 ----
 
