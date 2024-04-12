@@ -1,0 +1,43 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import Step from "../../blocks/Step.astro";
+
+import { Icon } from 'astro-icon/components'
+
+const shield = 'shield'
+const pulse = 'pulse'
+const anchor = 'anchor'
+const user = 'user'
+const check = 'checkCircle'
+
+const steps = [
+    { title: "Step 1", img: shield, summary: "Begin by cloning/copying an existing Astro Theme project."},
+    { title: "Step 2", img: pulse, summary: "Explore how the theme uses layouts, as this drives the \"context\" for all your pages."},
+    { title: "Step 3", img: anchor, summary: "Create a new page to test the layout and see how it works; envision what type of content is important to you."},
+    { title: "Step 4", img: user, summary: "Astro supports Markdown out-of-the-box! Document what you are discovering so that \"future you\" will know how to reuse this down the road."},
+    { title: "Step 5", img: pulse, summary: "Define your boundaries. For example, if you're using Tailwind, you'll probably see a lot of CSS classes interwoven directly with your HTML markup. If and how you choose to segregate those two will go a long way towards making your customizations maintainable."},
+    { title: "Step 6", img: 'clarity:atom-solid', summary: "Refactor the presentation. What stylistic aspects would server as general-purpose components? What stylistic aspects are one-off items that are used in a single page or part of a page?"},
+    { title: "Step 7", img: check, summary: "Treat it like a renovation project: Strip out the content of the site while keeping the styling."},
+]
+---
+<PageLayout>
+    <TopLayout>
+        <h1>Customizing an Astro Theme</h1>
+    </TopLayout>
+    <BottomLayout>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap">
+              <div class="flex flex-wrap w-full">
+                <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                    {steps.map((step, index) => <Step title={step.title} summary={step.summary} end={index === steps.length - 1}>
+                        <Icon name={step.img} />
+                    </Step>)}
+                </div>
+                <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://dummyimage.com/1200x500" alt="step">
+              </div>
+            </div>
+          </section>
+    </BottomLayout>
+</PageLayout>

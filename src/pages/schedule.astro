@@ -1,0 +1,104 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+
+// The compact schedule data
+const jan2024 = [
+    {
+        "course": "CSE 110",
+        "title": "Software Engineering",
+        "section": "A01",
+        "classes": [
+            {
+                "day": "Monday",
+                "time": "8:00",
+                "location": "WLH 2001",
+                "duration": 2
+            },
+            {
+                "day": "Wednesday",
+                "time": "8:00",
+                "location": "WLH 2001",
+                "duration": 2
+            },
+            {
+                "day": "Friday",
+                "time": "10:00",
+                "location": "WLH 2001",
+                "duration": 2
+            }
+        ]
+    },
+    {
+        "course": "DAT 135",
+        "title": "Data Science",
+        "section": "A03",
+        "classes": [
+            {
+                "day": "Tuesday",
+                "time": "10:00",
+                "location": "WLH 2001",
+                "duration": 2
+            },
+            {
+                "day": "Thursday",
+                "time": "13:00",
+                "location": "WLH 2001",
+                "duration": 2
+            }
+        ]
+    }
+]
+// Convert the schedule data into a more usable format
+const schedule = jan2024.flatMap(x => x.classes.map(y => ({"course":x.course, "section": x.section, "day":y.day, "times":Array(y.duration).fill(y.time).map((z, i) => parseInt(z.split(':')[0]) + i), "room":y.location})));
+// The hours on the calendar run from 08:00 to 16:00
+const hours = new Array(9).fill(0).map((_, index) => index + 8);
+// The days on the calendar from Monday to Friday
+const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+// Create a 2D array of cells, each containing the hour, day, and course (if any) that is scheduled for that hour and day
+const cells = hours.map(h => ({ hour: h, days: days.map(d => ({ day: d, course: (schedule.filter(s => s.day === d && s.times.includes(h))) })) }));
+// Strip out cells that are a continuation of a course from the previous hour
+cells.forEach(cell => cell.days = cell.days.filter(d => d.course.length === 0 || d.course[0].times[0] === cell.hour));
+---
+<PageLayout title="Home" description="Dan's Teaching Schedule - Jan 2024">
+    <TopLayout>
+        <div class="animate page-heading">
+          Schedule
+        </div>
+    </TopLayout>
+    <BottomLayout>
+        <table class="">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {cells.map(e =>
+                    <tr>
+                        <th>{e.hour > 12 ? e.hour - 12 : e.hour}:00</th>
+                        {e.days.map(d => <>{d.course.length === 1 ? <td rowspan="2" data-course={JSON.stringify(d.course[0])}>{d.course[0].course} | {d.course[0].section}<br />{d.course[0].room}</td> : <td></td>}</>)}
+                        <th>{e.hour > 12 ? e.hour - 12 : e.hour}:00</th>
+                    </tr>
+                )}
+            </tbody>
+        </table>
+    </BottomLayout>
+        <!-- <style>
+            td:not(:empty) {
+                background-color: #f0f0f0;
+                vertical-align: top;
+            }
+            tbody th {
+                background-color: #f0f0f0;
+                text-align: right;
+            }
+        </style> -->
+</PageLayout>
