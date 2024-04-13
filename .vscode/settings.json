@@ -1,5 +1,11 @@
 {
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[mdx]": {
+    "editor.suggest.selectionMode": "whenTriggerCharacter",
+    "editor.quickSuggestions": {
+      "other": "off"
+    }
   }
 }
