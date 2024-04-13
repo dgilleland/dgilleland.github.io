@@ -4,6 +4,7 @@ summary: "One of the nice things about hosting on GitHub and GitHub Pages are th
 date: "Apr 13 2024"
 draft: true
 tags:
+  - Security
 ---
 I got a notice of a security vulnerability when I posted my last blog item.
 
