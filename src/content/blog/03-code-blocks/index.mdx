@@ -1,0 +1,79 @@
+---
+title: Code Blocks in Astro
+summary: asdf
+date: Apr 19 2024
+tags:
+  - Astro
+---
+# Code Blocks in Astro
+
+The [**Expressive Code**](https://expressive-code.com/) plugin makes code fences in Markdown much more powerful and versatile. For example, consider the following code block of my installation experience. The first line is how I installed Expressive Code as an Astro add-in. The remaining lines initially show as collapsed, but you can expand them to see the results of walking through the installation wizard.
+
+```ps title="Installing Expressive Code in Astro" {1} collapse={2-44}
+pnpm astro add astro-expressive-code
+
+> astro-sphere@1.0.0 astro C:\GH\dgilleland\dgilleland.github.io
+> astro "add" "astro-expressive-code"
+
+⚠ astro-expressive-code is not an official Astro package.
+√ Continue? ... yes
+✔ Resolving with third party packages...
+
+  Astro will run the following command:
+  If you skip this step, you can always run it yourself later
+
+ ╭─────────────────────────────────────────╮
+ │ pnpm add astro-expressive-code@^0.35.2  │
+ ╰─────────────────────────────────────────╯
+
+√ Continue? ... yes
+✔ Installing dependencies...
+
+  Astro will make the following changes to your config file:
+
+ ╭ astro.config.mjs ─────────────────────────────────────────╮
+ │ import { defineConfig } from "astro/config";              │
+ │ import mdx from "@astrojs/mdx";                           │
+ │ import sitemap from "@astrojs/sitemap";                   │
+ │ import tailwind from "@astrojs/tailwind";                 │
+ │ import solidJs from "@astrojs/solid-js";                  │
+ │ import icon from "astro-icon";                            │
+ │                                                           │
+ │ import expressiveCode from "astro-expressive-code";       │
+ │                                                           │
+ │ // https://astro.build/config                             │
+ │ export default defineConfig({                             │
+ │   site: "https://astro-sphere-demo.vercel.app",           │
+ │   integrations: [mdx(), sitemap(), solidJs(), tailwind({  │
+ │     applyBaseStyles: false                                │
+ │   }), icon(), expressiveCode()]                           │
+ │ });                                                       │
+ ╰───────────────────────────────────────────────────────────╯
+
+√ Continue? ... yes
+  
+   success  Added the following integration to your project:
+  - astro-expressive-code
+```
+
+Installation was pretty smooth, except for one hiccup. It required an extra bit of manual tweaking, because the `mdx()` integration was before the `expressiveCode()` integration. Simply swapping those in the configuration file fixed the problem.
+
+```js ins="expressiveCode()," del=", expressiveCode()"
+// astro.config.mjs
+integrations: [expressiveCode(), mdx(), sitemap(), solidJs(), tailwind({
+  applyBaseStyles: false
+}), icon(), expressiveCode()]
+```
+
+Now, if you're familiar with how regular markdown code fences are rendered in environments such as GitHub, you are probably already seeing a lot of nice features. I won't detail how to do all of them, but the primary features include:
+
+- [Syntax Highlighting](https://expressive-code.com/key-features/syntax-highlighting/)
+- [Editor vs. Terminal Frames](https://expressive-code.com/key-features/frames/)
+- [Text and Line Markers](https://expressive-code.com/key-features/text-markers/)
+- [Word Wrap](https://expressive-code.com/key-features/word-wrap/)
+- [Collapible Sections](https://expressive-code.com/plugins/collapsible-sections/) (as an extra plugin)
+- [Line Numbers](https://expressive-code.com/plugins/line-numbers/) (also as an extra plugin)
+
+Expressive Code also support various [themes](https://expressive-code.com/guides/themes/) (if that's important to you).
+
+All-in-all, Expressive Code is the code formatter extension I've been looking for for well over a decade now.
