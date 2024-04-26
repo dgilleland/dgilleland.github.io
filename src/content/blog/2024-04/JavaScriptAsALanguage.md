@@ -5,6 +5,8 @@ date: Apr 26 2024
 tags:
   - JavaScript
 ---
+> *This is a published "draft" - I expect to revise it over the next short while.*
+
 # JavaScript as a Language
 
 JavaScript is a ***programming* language**. Before we get into what we mean by "programming", let's take a look at what we mean by *language*.
