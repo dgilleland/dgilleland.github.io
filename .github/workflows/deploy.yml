@@ -19,15 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v4.1.4
+        uses: actions/checkout@v4.1.1
 
-      - name: Setup Node
-        uses: actions/setup-node@v4.0.2
-        with:
-          node-version: 20        
+      # - name: Setup Node
+      #   uses: actions/setup-node@v4.0.2
+      #   with:
+      #     node-version: 20        
 
       - name: Install, build, and upload your site
-        uses: withastro/action@v2
+        uses: withastro/action@v2.0.0
         # with:
           # package-manager: pnpm
           # node-version: 20
