@@ -11,7 +11,7 @@ import { pluginCollapsibleSections } from '@expressive-code/plugin-collapsible-s
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-sphere-demo.vercel.app",
+  site: "https://dgilleland.github.io",
   integrations: [expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
     defaultProps: {
