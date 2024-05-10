@@ -7,7 +7,7 @@ tags:
 ---
 # Picking a Grading System
 
-We've recently adopted a new LMS at the school that we I work at, and I'm getting familiar with how to set up the gradebook. Our course outlines advertise the mark breakdown for each assignment as a weighted distribution, but I ran across a course that had its gradebook set up as a point distribution. It was there as a "port" from our previous LMS, but it got me writing up notes on the effects of mixing up the two systems.
+We've recently adopted a new LMS at the school that I work at, and I'm getting familiar with how to set up the gradebook. Our course outlines advertise the mark breakdown for each assignment as a weighted distribution, but I ran across a course that had its gradebook set up as a point distribution. It was there as a "port" from our previous LMS, but it got me writing up notes on the effects of mixing up the two systems.
 
 > Fair warning: This post contains math (so grab a coffee and close the door).
 
