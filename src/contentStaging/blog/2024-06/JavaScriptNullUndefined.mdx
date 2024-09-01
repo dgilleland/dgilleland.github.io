@@ -1,0 +1,10 @@
+---
+
+---
+
+# Why `null` and `undefined` in JavaScript?
+
+One of the things that helps me to understand why there are these two values `null` and `undefined` and how they differ has been the simple realization that everything in JavaScript exists in a "dictionary" structure.
+
+- [ ] Think of a simple array: `['First', 'Second', 'Third']`. This is an array of strings. If you try to access an element outside of that array (say at index `-1`), you will get `undefined`. In other words, that whole *position* in the array simply does not exist.
+- [ ] Contrast that with if we had added an item to the array by pushing a `null` value onto it. If we accessed that element, the *position* in the array would exist, but the value would be `null`.
