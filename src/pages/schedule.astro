@@ -3,6 +3,151 @@ import PageLayout from "@layouts/PageLayout.astro";
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
 
+
+const bgColors = ["bg-yellow-200", "bg-lime-400", "bg-sky-200", "bg-violet-400"]
+
+// The expanded schedule data
+// define a TypeScript type for the sched.schedule.offerings data
+type SchedOffering = {
+    code: string,
+    name: string,
+    sections: {
+        section: string,
+        classes: {
+            day: string,
+            start: string,
+            duration: number,
+            room: string,
+            livestream?: string
+        }[]
+    }[]
+}
+
+// Define a TypeScript type for the sched data
+type Sched = {
+    term: {
+        number: number,
+        title: string,
+        start: string,
+        year: string
+    },
+    schedule: {
+        instructor: string,
+        offerings: {
+            code: string,
+            name: string,
+            sections: {
+                section: string,
+                classes: {
+                    day: string,
+                    start: string,
+                    duration: number,
+                    room: string,
+                    livestream?: string
+                }[]
+            }[]
+        }[]
+    }
+}
+const sched: Sched = {
+    "term": {
+        "number": 1241,
+        "title": "Fall Term",
+        "start": "Sep 3, 2024",
+        "year": "2024/2025"
+    },
+    "schedule": {
+        "instructor": "Dan Gilleland",
+        "offerings": [
+            {
+                "code": "CPSC-1520",
+                "name": "Client-Side Scripting in JavaScript",
+                "sections": [
+                    {
+                        "section": "A02",
+                        "classes": [
+                            {
+                                "day": "Monday",
+                                "start": "8:00",
+                                "duration": 2,
+                                "room": "WA320"
+                            },
+                            {
+                                "day": "Wednesday",
+                                "start": "13:00",
+                                "duration": 2,
+                                "room": "O",
+                                "livestream": "W309FB"
+                            },
+                            {
+                                "day": "Thursday",
+                                "start": "8:00",
+                                "duration": 2,
+                                "room": "WA314"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "code": "DMIT-1508",
+                "name": "Database Fundamentals",
+                "sections": [
+                    {
+                        "section": "A03",
+                        "classes": [
+                            {
+                                "day": "Monday",
+                                "start": "10:00",
+                                "duration": 2,
+                                "room": "WA320"
+                            },
+                            {
+                                "day": "Wednesday",
+                                "start": "8:00",
+                                "duration": 2,
+                                "room": "WA302"
+                            },
+                            {
+                                "day": "Thursday",
+                                "start": "13:00",
+                                "duration": 2,
+                                "room": "O",
+                                "livestream": "W309FB|Home"
+                            }
+                        ]
+                    },
+                    {
+                        "section": "A04",
+                        "classes": [
+                            {
+                                "day": "Tuesday",
+                                "start": "10:00",
+                                "duration": 2,
+                                "room": "O",
+                                "livestream": "Home"
+                            },
+                            {
+                                "day": "Wednesday",
+                                "start": "10:00",
+                                "duration": 2,
+                                "room": "WA312"
+                            },
+                            {
+                                "day": "Friday",
+                                "start": "8:00",
+                                "duration": 2,
+                                "room": "WA302"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+};
+const instructorName = sched.schedule.instructor;
+const term = sched.term;
 // The compact schedule data
 const jan2024 = [
     {
@@ -81,16 +226,39 @@ const jan2024 = [
         ]
     }
 ]
-// Convert the schedule data into a more usable format
-const schedule = jan2024.flatMap(x => x.classes.map(y => ({"course":x.course, "section": x.section, "day":y.day, "times":Array(y.duration).fill(y.time).map((z, i) => parseInt(z.split(':')[0]) + i), "room":y.location})));
+
+// <usableSchedule>
+    // Convert the schedule data into a more usable format
+    const schedule = jan2024.flatMap(x => x.classes.map(y => ({"course":x.course, "section": x.section, "day":y.day, "times":Array(y.duration).fill(y.time).map((z, i) => parseInt(z.split(':')[0]) + i), "room":y.location})));
+    // Convert sched.schedule.offerings into the same useful format as schedule which was created from jan2024
+    const sep2024 = sched.schedule.offerings.flatMap(x => x.sections.flatMap(y => y.classes.map(z => ({"course":x.code, "section": y.section, "day":z.day, "times":Array(z.duration).fill(z.start).map((a, i) => parseInt(a.split(':')[0]) + i), "room":z.room === "O"?"Online":z.room}))));
+// </usableSchedule>
+
+// <colorMapping>
+    // From the array of bgColors, pick a distinct color for each course/section combination from the schedule
+    const bgCourses = new Set(sep2024.map(x => `${x.course}-${x.section}`));
+    const bgCourseColors = Array.from(bgCourses).map((x, i) => ({[x]: bgColors[i % bgColors.length]}));
+    console.log("Course Color Map",bgCourseColors);
+    // A function that returns the color from bgCourseColors for a given course/section combination
+    const getColor = (course:string, section:string) => bgCourseColors.filter(x => x[`${course}-${section}`])[0]?.[`${course}-${section}`];
+
+    console.log("Found:", getColor("CPSC-1520", "A03"));
+    console.log("Not Found:", getColor("CPSC-1520", "A04"));
+    const getCourses = (x) => new Set(x.map(x => `${x.course}-${x.section}`));
+    const mapColors = (x) => Array.from(x).map((x, i) => ({[x]: bgColors[i % bgColors.length]}));
+    console.log("FP", mapColors(getCourses(sep2024)));
+// </colorMapping>
+
+
 // The hours on the calendar run from 08:00 to 16:00
 const hours = new Array(9).fill(0).map((_, index) => index + 8);
 // The days on the calendar from Monday to Friday
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 // Create a 2D array of cells, each containing the hour, day, and course (if any) that is scheduled for that hour and day
-const cells = hours.map(h => ({ hour: h, days: days.map(d => ({ day: d, course: (schedule.filter(s => s.day === d && s.times.includes(h))) })) }));
+const cells = hours.map(h => ({ hour: h, days: days.map(d => ({ day: d, course: (sep2024.filter(s => s.day === d && s.times.includes(h))) })) }));
 // Strip out cells that are a continuation of a course from the previous hour
 cells.forEach(cell => cell.days = cell.days.filter(d => d.course.length === 0 || d.course[0].times[0] === cell.hour));
+console.log("cells", cells);
 ---
 <PageLayout title="Home" description="Dan's Teaching Schedule - Jan 2024">
     <TopLayout>
@@ -99,7 +267,7 @@ cells.forEach(cell => cell.days = cell.days.filter(d => d.course.length === 0 ||
         </div>
     </TopLayout>
     <BottomLayout>
-        <table class="">
+        <table class="w-full">
             <thead>
                 <tr>
                     <th>Time</th>
@@ -114,13 +282,36 @@ cells.forEach(cell => cell.days = cell.days.filter(d => d.course.length === 0 ||
             <tbody>
                 {cells.map(e =>
                     <tr>
-                        <th>{e.hour > 12 ? e.hour - 12 : e.hour}:00</th>
-                        {e.days.map(d => <>{d.course.length === 1 ? <td rowspan="2" data-course={JSON.stringify(d.course[0])}>{d.course[0].course} | {d.course[0].section}<br />{d.course[0].room}</td> : <td></td>}</>)}
-                        <th>{e.hour > 12 ? e.hour - 12 : e.hour}:00</th>
+                        <th class="text-sm">{e.hour > 12 ? e.hour - 12 : e.hour}:00</th>
+                        {e.days.map(d => <>{d.course.length === 1 ? <td rowspan="2" class={getColor(d.course[0].course, d.course[0].section) + ' text-center text-black'} data-course={JSON.stringify(d.course[0])}>{d.course[0].course}<br />{d.course[0].section} | {d.course[0].room}</td> : <td></td>}</>)}
+                        <th class="text-sm">{e.hour > 12 ? e.hour - 12 : e.hour}:00</th>
                     </tr>
                 )}
             </tbody>
         </table>
+
+
+        <div class="hidden grid-cols-2 gap-1">
+            <details open>
+                <summary>
+                    <h2>Jan 2024 Schedule</h2>
+                </summary>
+                <pre>{ JSON.stringify(schedule, null, 2) }</pre>
+            </details>
+            <details open>
+                <summary>
+                    <h2>Sep 2024</h2>
+                </summary>
+                <pre>{ JSON.stringify(sep2024, null, 2) }</pre>
+            </details>
+
+            <details class="hidden col-span-2">
+                <summary>
+                    <h2>Schedule</h2>
+                </summary>
+                <pre>{ JSON.stringify(schedule, null, 2) }</pre>
+            </details>
+        </div>
     </BottomLayout>
         <!-- <style>
             td:not(:empty) {
