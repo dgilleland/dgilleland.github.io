@@ -244,8 +244,8 @@ const jan2024 = [
 
     console.log("Found:", getColor("CPSC-1520", "A03"));
     console.log("Not Found:", getColor("CPSC-1520", "A04"));
-    const getCourses = (x) => new Set(x.map(x => `${x.course}-${x.section}`));
-    const mapColors = (x) => Array.from(x).map((x, i) => ({[x]: bgColors[i % bgColors.length]}));
+    const getCourses = (x:any) => new Set(x.map((x:any) => `${x.course}-${x.section}`));
+    const mapColors = (x:any) => Array.from(x).map((x:any, i:number) => ({[x]: bgColors[i % bgColors.length]}));
     console.log("FP", mapColors(getCourses(sep2024)));
 // </colorMapping>
 
