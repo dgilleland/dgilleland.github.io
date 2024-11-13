@@ -259,15 +259,20 @@ const cells = hours.map(h => ({ hour: h, days: days.map(d => ({ day: d, course: 
 // Strip out cells that are a continuation of a course from the previous hour
 cells.forEach(cell => cell.days = cell.days.filter(d => d.course.length === 0 || d.course[0].times[0] === cell.hour));
 console.log("cells", cells);
+
+const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+const termStart = () => new Date(term.start);
+const termStartMonth = () => monthNames[termStart().getMonth()];
 ---
 <PageLayout title="Home" description="Dan's Teaching Schedule - Jan 2024">
     <TopLayout>
         <div class="animate page-heading">
-          Schedule
+          Schedule for {instructorName} 
         </div>
     </TopLayout>
     <BottomLayout>
         <table class="w-full">
+            <caption>{term.title}, {termStartMonth()} ({term.year})</caption>
             <thead>
                 <tr>
                     <th>Time</th>
@@ -294,22 +299,22 @@ console.log("cells", cells);
         <div class="hidden grid-cols-2 gap-1">
             <details open>
                 <summary>
-                    <h2>Jan 2024 Schedule</h2>
+                    <h2>Jan 2024 (OLD)</h2>
                 </summary>
                 <pre>{ JSON.stringify(schedule, null, 2) }</pre>
             </details>
             <details open>
                 <summary>
-                    <h2>Sep 2024</h2>
+                    <h2>Sep 2024 (Current)</h2>
                 </summary>
                 <pre>{ JSON.stringify(sep2024, null, 2) }</pre>
             </details>
 
-            <details class="hidden col-span-2">
+            <details class=" col-span-2">
                 <summary>
-                    <h2>Schedule</h2>
+                    <h2>Cells</h2>
                 </summary>
-                <pre>{ JSON.stringify(schedule, null, 2) }</pre>
+                <pre>{ JSON.stringify(cells, null, 2) }</pre>
             </details>
         </div>
     </BottomLayout>
