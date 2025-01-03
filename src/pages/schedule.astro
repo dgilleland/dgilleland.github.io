@@ -49,7 +49,7 @@ type Sched = {
         }[]
     }
 }
-const sched: Sched = {
+const sep2024sched: Sched = {
     "term": {
         "number": 1241,
         "title": "Fall Term",
@@ -146,6 +146,94 @@ const sched: Sched = {
         ]
     }
 };
+const sched:Sched = {
+  "term": {
+    "number": 1242,
+    "title": "Winter Term",
+    "start": "Jan 08, 2025",
+    "year": "2024/2025"
+  },
+  "schedule": {
+    "instructor": "Dan Gilleland",
+    "offerings": [
+      {
+        "name": "Client-Side Scripting Java",
+        "code": "CPSC 1520",
+        "sections": [
+          {
+            "section": "A05",
+            "classes": [
+              {
+                "day": "Wednesday",
+                "room": "O",
+                "duration": 2,
+                "start": "10:00 AM"
+              },
+              {
+                "day": "Thursday",
+                "room": "MAIN W WB308",
+                "duration": 2,
+                "start": "1:00 PM"
+              },
+              {
+                "day": "Monday",
+                "room": "MAIN W WB320",
+                "duration": 2,
+                "start": "10:00 AM"
+              }
+            ]
+          },
+          {
+            "section": "A01",
+            "classes": [
+              {
+                "day": "Wednesday",
+                "room": "O",
+                "duration": 2,
+                "start": "1:00 PM"
+              },
+              {
+                "day": "Friday",
+                "room": "MAIN W WA314",
+                "duration": 2,
+                "start": "10:00 AM"
+              },
+              {
+                "day": "Tuesday",
+                "room": "MAIN W WB306",
+                "duration": 2,
+                "start": "10:00 AM"
+              }
+            ]
+          },
+          {
+            "section": "A02",
+            "classes": [
+              {
+                "day": "Thursday",
+                "room": "MAIN W WB308",
+                "duration": 2,
+                "start": "10:00 AM"
+              },
+              {
+                "day": "Friday",
+                "room": "MAIN W W215",
+                "duration": 2,
+                "start": "3:00 PM"
+              },
+              {
+                "day": "Monday",
+                "room": "O",
+                "duration": 2,
+                "start": "1:00 PM"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
 const instructorName = sched.schedule.instructor;
 const term = sched.term;
 // The compact schedule data
