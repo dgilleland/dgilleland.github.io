@@ -146,7 +146,113 @@ const sep2024sched: Sched = {
         ]
     }
 };
-const sched:Sched = {
+const sched:Sched = 
+{
+  "term": {
+    "number": 1251,
+    "title": "Fall Term",
+    "start": "Sep 03, 2025",
+    "year": "2025/2026"
+  },
+  "schedule": {
+    "instructor": "Dan Gilleland",
+    "offerings": [
+      {
+        "name": "Client-Side Scripting Java",
+        "code": "CPSC 1520",
+        "sections": [
+          {
+            "section": "A03",
+            "classes": [
+              {
+                "day": "Wednesday",
+                "room": "WB312",
+                "duration": 2,
+                "start": "13:00"
+              },
+              {
+                "day": "Friday",
+                "room": "WB312",
+                "duration": 2,
+                "start": "10:00"
+              },
+              {
+                "day": "Monday",
+                "room": "O",
+                "duration": 2,
+                "start": "13:00"
+              }
+            ]
+          },
+          {
+            "section": "A04",
+            "classes": [
+              {
+                "day": "Tuesday",
+                "room": "WB314",
+                "duration": 2,
+                "start": "8:00"
+              },
+              {
+                "day": "Friday",
+                "room": "WC322",
+                "duration": 2,
+                "start": "13:00"
+              },
+              {
+                "day": "Monday",
+                "room": "O",
+                "duration": 2,
+                "start": "8:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Front-End Development",
+        "code": "DMIT 2008",
+        "sections": [
+          {
+            "section": "A01",
+            "classes": [
+              {
+                "day": "Tuesday",
+                "room": "WB322",
+                "duration": 2,
+                "start": "13:00"
+              },
+              {
+                "day": "Monday",
+                "room": "WC320",
+                "duration": 2,
+                "start": "10:00"
+              }
+            ]
+          },
+          {
+            "section": "A02",
+            "classes": [
+              {
+                "day": "Wednesday",
+                "room": "WA302",
+                "duration": 2,
+                "start": "10:00"
+              },
+              {
+                "day": "Thursday",
+                "room": "O",
+                "duration": 2,
+                "start": "10:00"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+/*{
   "term": {
     "number": 1242,
     "title": "Winter Term",
@@ -234,6 +340,7 @@ const sched:Sched = {
     ]
   }
 }
+  */
 const instructorName = sched.schedule.instructor;
 const term = sched.term;
 // The compact schedule data
