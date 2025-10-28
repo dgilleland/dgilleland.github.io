@@ -1,6 +1,6 @@
 ---
 title: A Career in Software Development (revised)
-summary: I recently had a student who was asking about whether a career in software development was worth pursuing in today's market. Here's my reply with extended advice.
+summary: I've been thinking long and hard about how to best help my students as they near their graduation. I thought I would ask ChatGPT. Here's its response.
 date: Oct 28 2025
 tags:
   - Career
